@@ -1,19 +1,19 @@
 # Thông tin học viên
 
-- Họ và tên: <<>>
-- MSHV: <<>>
+- Họ và tên: Nguyễn Nhật Hạ
+- MSHV: 2A202603325
 - Lớp (L2 / L3 / khác): <<>>
-- Tài khoản GitHub: <<>>
-- Repo bài nộp (URL): <<>>
+- Tài khoản GitHub: hanguyen1406
+- Repo bài nộp (URL): https://github.com/hanguyen1406/K5-L23-Day08-NguyenNhatHa-2A202603325-AI-Assisted-Labeling
 - Commit chốt bài (hash): <<>>
-- Máy: <<hệ điều hành, GPU (CUDA / MPS / không có)>>
-- CVAT (Docker): <<phiên bản, ví dụ v2.81.0>>
+- Máy: Windows, CPU only (không GPU)
+- CVAT (Docker): v2.81.0
 
 ## Kết quả tóm tắt (điền cuối bài; số lấy từ `submission/qc/*`, kèm mẫu số)
 
-- Máy: accepted / edited / deleted: <<... / ... / ... (mẫu số: ... box máy)>>; added: <<... (mẫu số: ... đối tượng)>>
-- So với gold: precision / recall của **máy** <<... / ...>>
-- Bắt bẫy: <<.../12 = ...%>>
-- Thời gian: gán tay <<... phút/ảnh>>; duyệt có pre-label <<... phút/ảnh>>
-- Lỗi QC: <<...% theo ảnh (.../...)>>, <<...% theo đối tượng (.../...)>>
-- **Quyết định:** <<Release / Hold / Rework>> — lý do một dòng: <<...>>
+- Máy: accepted / edited / deleted: 375 / 24 / 31 (mẫu số: 435 box máy); added: 17 (mẫu số: 416 đối tượng)
+- So với gold: precision / recall của **máy** 66.7% / 90.9% (44 đối tượng gold)
+- Bắt bẫy: 8/12 = 66.7% (lần 1: 5/12 = 41.7%)
+- Thời gian: gán tay 7,5 phút/ảnh (30 phút/4 ảnh); duyệt có pre-label 1,7 phút/ảnh (41 phút/24 ảnh)
+- Lỗi QC: 20% theo ảnh (1/5), 1.1% theo đối tượng (1/92)
+- **Quyết định:** Rework — ảnh lỗi 20% > 2% và bắt bẫy 66.7% < 80%, lô nhãn chưa đủ tin cậy để Release
